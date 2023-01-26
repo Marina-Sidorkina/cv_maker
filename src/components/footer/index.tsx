@@ -18,9 +18,11 @@ const Link = styled.a`
 `;
 
 const Footer = (props: {href: string;}) => {
-  return <Wrapper>
-    <Link href={props.href} target="_blank">GitHub</Link>
-  </Wrapper>
+  return (
+    <Wrapper>
+      <Link href={props.href} target="_blank">GitHub</Link>
+    </Wrapper>
+  );
 }
 
 export default React.memo(Footer);
