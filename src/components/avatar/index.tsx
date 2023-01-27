@@ -45,9 +45,7 @@ const Avatar = (props: {
 
     if (objectUrl) setPreview(objectUrl);
 
-    return () => {
-      if (objectUrl) URL.revokeObjectURL(objectUrl)
-    };
+    return () => { if (objectUrl) URL.revokeObjectURL(objectUrl) };
   }, [selectedFile]);
 
   return (
