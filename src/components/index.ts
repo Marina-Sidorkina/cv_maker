@@ -1,9 +1,9 @@
 export {default as Header} from './header';
 export {default as Footer} from './footer';
-export {default as Content} from './content';
+export {default as Content} from './layouts/content';
 export {default as Avatar} from './avatar';
-export {default as Aside} from './aside';
+export {default as Aside} from './layouts/aside';
 export {default as Contacts} from './contacts';
-export {default as FileInput} from './file-input';
-export {default as Label} from './label';
+export {default as FileInput} from './elements/file-input';
+export {default as Label} from './elements/label';
 export {default as Preview} from './preview';
