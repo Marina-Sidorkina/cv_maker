@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { ReactComponent as PrintIcon } from '../../assets/icons/print.svg';
 
 const Wrapper = styled.header`
   box-sizing: border-box;
@@ -21,15 +22,15 @@ const Logo = styled.div`
 const Button = styled.button`
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 110px;
-  height: 35px;
+  width: 112px;
+  height: 30px;
   border: none;
   border-radius: 2px;
   background-color: #fbf8fd;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
   color: #21247d;
   
@@ -46,7 +47,10 @@ const Header = (props: {onClick: Function}) => {
   return (
     <Wrapper>
       <Logo>CV Maker</Logo>
-      <Button onClick={() => props.onClick()}>Напечатать</Button>
+      <Button onClick={() => props.onClick()}>
+        <PrintIcon/>
+        Напечатать
+      </Button>
     </Wrapper>
   );
 }
