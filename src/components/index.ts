@@ -7,4 +7,6 @@ export {default as Contact} from './elements/contact';
 export {default as FileInput} from './elements/file-input';
 export {default as Label} from './elements/label';
 export {default as Preview} from './elements/preview';
-export {default as Title} from './elements/title';
+export {default as Main} from './layouts/main';
+export {default as Info} from './info';
+export {default as Section} from './layouts/section';
