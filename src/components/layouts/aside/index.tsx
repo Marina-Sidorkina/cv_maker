@@ -3,10 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   box-sizing: border-box;
-  width: 250px;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  width: 300px;
 `;
 
 const Top = styled.div`
@@ -14,13 +11,13 @@ const Top = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 `;
 
 const Main = styled.div`
   box-sizing: border-box;
-  width: 250px;
+  width: 300px;
 `;
 
 const Aside = (props: {top: React.ReactNode; children: React.ReactNode;}) => {

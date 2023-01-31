@@ -6,4 +6,5 @@ export {default as Aside} from './layouts/aside';
 export {default as Contacts} from './contacts';
 export {default as FileInput} from './elements/file-input';
 export {default as Label} from './elements/label';
-export {default as Preview} from './preview';
+export {default as Preview} from './elements/preview';
+export {default as Title} from './elements/title';

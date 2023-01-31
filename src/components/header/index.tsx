@@ -31,7 +31,6 @@ const Button = styled.button`
   background-color: #fbf8fd;
   cursor: pointer;
   font-size: 14px;
-  font-style: italic;
   color: #21247d;
   
   &:hover {
@@ -48,7 +47,7 @@ const Header = (props: {onClick: Function}) => {
     <Wrapper>
       <Logo>CV Maker</Logo>
       <Button onClick={() => props.onClick()}>
-        <PrintIcon/>
+        <PrintIcon />
         Напечатать
       </Button>
     </Wrapper>

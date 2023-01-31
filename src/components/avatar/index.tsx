@@ -13,7 +13,7 @@ const Wrapper = styled.div<{isSquare: boolean}>`
   border-radius: ${(props) => props.isSquare ? '10px' : '50%'};
   background-color: #dcdcdc;
   cursor: pointer;
-  border: 1px dashed #21247d;
+  border: 1px dashed #046398;
 
   input {
     display: none;
@@ -50,7 +50,7 @@ const Avatar = (props: {
 
   return (
       <Wrapper isSquare={props.isSquare} onClick={() => props.onClick()}>
-        <FileInput id={'Avatar'} onChange={setSelectedFile}/>
+        <FileInput id={'Avatar'} onChange={setSelectedFile} accept={'.jpeg, .jpg, .png'}/>
         <Label id={'Avatar'}>
           {preview ? <Preview image={preview}/> : <CameraIcon />}
         </Label>
