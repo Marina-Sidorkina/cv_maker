@@ -6,16 +6,18 @@ import { ReactComponent as PhoneIcon } from '../src/assets/icons/phone.svg';
 
 function App() {
   const componentRef = useRef(null);
-  const handlePrintClick = useReactToPrint({
-    content: () => componentRef.current,
-  })
 
   const avatar = <Avatar isSquare={false} onClick={() => console.log('Avatar clicked')}/>;
+
   const defaults = useMemo(() => ({
     mail: 'nick@mail.com',
     phone: '+7 (777) 777-77-77',
     GitHub: 'https://github.com/Marina-Sidorkina/cv_maker',
   }), []);
+
+  const handlePrintClick = useReactToPrint({
+    content: () => componentRef.current,
+  });
 
   return (
     <>
