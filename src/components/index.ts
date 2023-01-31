@@ -3,7 +3,7 @@ export {default as Footer} from './footer';
 export {default as Content} from './layouts/content';
 export {default as Avatar} from './avatar';
 export {default as Aside} from './layouts/aside';
-export {default as Contact} from './contact';
+export {default as Contact} from './elements/contact';
 export {default as FileInput} from './elements/file-input';
 export {default as Label} from './elements/label';
 export {default as Preview} from './elements/preview';
