@@ -14,6 +14,7 @@ function App() {
   const defaults = useMemo(() => ({
     mail: 'nick@mail.com',
     phone: '+7 (777) 777-77-77',
+    GitHub: 'https://github.com/Marina-Sidorkina/cv_maker',
   }), []);
 
   return (
@@ -25,7 +26,7 @@ function App() {
           <Contact icon={<PhoneIcon />} text={defaults.phone}/>
         </Aside>
       </Content>
-      <Footer href={"https://github.com/Marina-Sidorkina/cv_maker"}/>
+      <Footer href={defaults.GitHub}/>
     </>
   );
 }
