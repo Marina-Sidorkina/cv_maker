@@ -12,7 +12,7 @@ const Top = styled.div`
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 300px;
+  height: 270px;
 `;
 
 const Main = styled.div`

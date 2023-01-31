@@ -5,7 +5,8 @@ import { ReactComponent as PhoneIcon } from '../../assets/icons/phone.svg';
 
 
 const Wrapper = styled.div`
-  padding: 0 40px;
+  box-sizing: border-box;
+  padding: 0 30px;
 `;
 
 const Item = styled.div`
@@ -14,7 +15,7 @@ const Item = styled.div`
   justify-content: flex-start;
   align-items: center;
   min-height: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #6299df;
   font-size: 18px;
   line-height: 25px;
@@ -24,20 +25,25 @@ const Item = styled.div`
   }
   
   svg {
+    flex-shrink: 0;
     margin-right: 10px;
+  }
+  
+  span {
+    max-width: 230px;
   }
 `;
 
 const Contacts = () => {
   return (
     <Wrapper>
-      <Item contentEditable suppressContentEditableWarning spellCheck={false}>
-        <MailIcon contentEditable={false} />
-        nick@gmail.com
+      <Item>
+        <MailIcon />
+        <span contentEditable suppressContentEditableWarning spellCheck={false}>nick@gmail.com</span>
       </Item>
-      <Item contentEditable suppressContentEditableWarning spellCheck={false}>
-        <PhoneIcon contentEditable={false} />
-        +1 588-6500
+      <Item >
+        <PhoneIcon />
+        <span contentEditable suppressContentEditableWarning spellCheck={false}>+1 588-6500</span>
       </Item>
     </Wrapper>
   );
